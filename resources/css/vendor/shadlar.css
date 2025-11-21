@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    /* Light mode: usa un tono medio de slate como color principal */
+    --color-primary: var(--color-slate-600);
+}
+
+@theme dark {
+    /* Dark mode: usa un tono más claro de slate para mejor contraste en fondo oscuro */
+    --color-primary: var(--color-slate-300);
+}
